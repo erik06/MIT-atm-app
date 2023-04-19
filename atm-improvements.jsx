@@ -54,6 +54,7 @@ const Account = () => {
     let newTotal = isDeposit ? totalState + deposit : totalState - deposit;
     setTotalState(newTotal);
     setValidTransaction(false);
+    event.target.elements[1].value = 0;
   };
 
   const handleModeSelect = (e) => {
